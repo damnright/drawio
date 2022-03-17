@@ -2,9 +2,9 @@
   "name": "draw.io",
   "version": "16.3.1",
   "description": "diagrams.net desktop",
-  "main": "electron.js",
+  "main": "src/main/webapp/index.html",
   "scripts": {
-    "start": "electron ."
+    "start": "serve"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,8 @@
     "electron-progressbar": "^2.0.1",
     "electron-store": "^8.0.0",
     "electron-updater": "^4.6.5",
-    "pdf-lib": "^1.16.0"
+    "pdf-lib": "^1.16.0",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "electron": "^16.0.5"

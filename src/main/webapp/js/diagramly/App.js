@@ -13,6 +13,7 @@
  */
 App = function(editor, container, lightbox)
 {
+	console.log('yahooha')
 	EditorUi.call(this, editor, container, (lightbox != null) ? lightbox :
 		(urlParams['lightbox'] == '1' || (uiTheme == 'min' &&
 		urlParams['chrome'] != '0')));
@@ -641,7 +642,7 @@ App.main = function(callback, createUi)
 				if (CryptoJS.MD5(content).toString() != '1f536e2400baaa30261b8c3976d6fe06')
 				{
 					console.log('Change bootstrap script MD5 in the previous line:', CryptoJS.MD5(content).toString());
-					alert('[Dev] Bootstrap script change requires update of CSP');
+					console.log('[Dev] Bootstrap script change requires update of CSP');
 				}
 			}
 			
